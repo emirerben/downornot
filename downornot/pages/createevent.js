@@ -13,7 +13,7 @@ export default function Form() {
       <h1 class="text-center py-10 text-lg text-white">down or not 👇</h1>
       {/* old events */}
       <div class='relative text-center text-white text-xl list-none'>
-        <form action="/api/form" method="post">
+        <form action="/api/event" method="post">
           <li><input required class="p-1 text-center w-3/4 my-3 text-md border-none	xl:bg-black" type="text" id="name" name="name" placeholder="Enter event name"></input></li>
           <li><input required class="p-1 text-center w-3/4	my-3 text-md border-none	xl:bg-transparent" type="text" id="date" name="date" placeholder="Enter date"></input></li>
           <li><input class="p-1 text-center w-3/4	my-3 text-md border-none	xl:bg-transparent" type="text" id="time" name="time" placeholder="Enter time"></input></li>

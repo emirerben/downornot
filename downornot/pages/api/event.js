@@ -1,3 +1,8 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+
+
 export default function handler(req, res) {
   // Get data submitted in request's body.
   const body = req.body
@@ -15,5 +20,5 @@ export default function handler(req, res) {
 
   // Found the name.
   // Sends a HTTP success code
-  res.status(200).json({ data: `${body.name}, ${body.date}, ${body.time}, ${body.details}, ${body.location}` })
+  res.status(200).json({ event: `${body.name}, ${body.date}, ${body.time}, ${body.details}, ${body.location}` })
 }
